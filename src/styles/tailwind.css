@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors - Government Authority Blue */
+    --color-primary: #1A73E8;
+    --color-primary-foreground: #FFFFFF;
+    
+    /* Secondary Colors - Professional Slate */
+    --color-secondary: #475569;
+    --color-secondary-foreground: #FFFFFF;
+    
+    /* Accent Colors - High-Impact Conversion Orange */
+    --color-accent: #FF6B35;
+    --color-accent-foreground: #FFFFFF;
+    
+    /* Status Colors - Critical for the Comparison Section */
+    --color-success: #10B981; /* Green for ResolveIt */
+    --color-success-foreground: #FFFFFF;
+    --color-destructive: #EF4444; /* Red for Traditional System */
+    --color-destructive-foreground: #FFFFFF;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444; /* Standard Error Red */
+    
+    /* Background & Surfaces */
+    --color-background: #FFFFFF;
+    --color-foreground: #1E293B;
+    --color-surface: #F8FAFC;
+    --color-surface-foreground: #1E293B;
+    
+    /* Muted Tones - Used for the Traditional System text */
+    --color-muted: #F1F5F9;
+    --color-muted-foreground: #64748B;
+    
+    /* UI Borders and Inputs */
+    --color-border: #E2E8F0;
+    --color-input: #E2E8F0;
+    --color-ring: #1A73E8;
+
+    --radius: 0.5rem;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Source Sans 3', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline font-bold;
+  }
+}

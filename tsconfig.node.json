@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    
+    /* Logic: Enable strict type-checking to catch null/undefined bugs early */
+    "strict": true,
+    
+    /* Logic: Ensure 'AppIcon.tsx' and 'appicon.tsx' aren't treated as the same file 
+       to prevent build failures on Linux/Deployment servers */
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "vite.config.ts"
+  ]
+}
