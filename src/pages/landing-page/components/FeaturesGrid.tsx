@@ -92,11 +92,11 @@ const FeaturesGrid = () => {
             className="w-full min-w-0 bg-card rounded-lg overflow-hidden border border-border hover:shadow-xl transition-shadow duration-250">
 
               <div className="aspect-[3/4] overflow-hidden">
-                <Image
-                src={feature.image}
-                alt={feature.alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-
+               <Image
+  src={feature.image || ""} // Fallback to empty string if somehow undefined
+  alt={feature.alt || "Feature Image"} 
+  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+/>
               </div>
               <div className="p-6 md:p-8">
                 <div className="flex items-center space-x-3 mb-4">
