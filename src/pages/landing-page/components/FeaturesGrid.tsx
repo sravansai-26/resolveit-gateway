@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import Icon from '../../../components/AppIcon';
-import Image from '../../../components/AppImage';
+import Icon from '@/components/AppIcon'; 
 import type { FeatureCard } from '../types';
 
 const FeaturesGrid = () => {
@@ -9,17 +8,15 @@ const FeaturesGrid = () => {
       id: '1',
       icon: 'Shield',
       title: 'Secure Reporting',
-      description:
-        'End-to-end encryption ensures your complaints and personal data remain protected. VirusTotal verified with no permission abuse.',
-      image: "/images/screenshots/secure-reporting.jpg", // Recommended name for consistency
+      description: 'End-to-end encryption ensures your complaints and personal data remain protected. VirusTotal verified with no permission abuse.',
+      image: "/images/screenshots/secure-reporting.jpg", 
       alt: 'Digital security and data protection visualization'
     },
     {
       id: '2',
       icon: 'MapPin',
       title: 'Real-Time Tracking',
-      description:
-        'Track your complaint journey from submission to resolution with live updates and status notifications at every stage.',
+      description: 'Track your complaint journey from submission to resolution with live updates and status notifications at every stage.',
       image: "/images/screenshots/status-checking.png",
       alt: 'Interface showing live status tracking of reported community issues'
     },
@@ -27,8 +24,7 @@ const FeaturesGrid = () => {
       id: '3',
       icon: 'MessageSquare',
       title: 'Direct Authority Communication',
-      description:
-        'Connect directly with government officials responsible for your area. No middlemen, no delays, just direct action.',
+      description: 'Connect directly with government officials responsible for your area. No middlemen, no delays, just direct action.',
       image: "/images/screenshots/authorities.jpg",
       alt: 'Professional communication portal with government authorities'
     },
@@ -36,8 +32,7 @@ const FeaturesGrid = () => {
       id: '4',
       icon: 'Camera',
       title: 'Photo Evidence',
-      description:
-        'Capture and submit visual proof of community issues with automatic location tagging for accurate problem identification.',
+      description: 'Capture and submit visual proof of community issues with automatic location tagging for accurate problem identification.',
       image: "/images/screenshots/community-issue.jpg",
       alt: 'Smartphone capturing visual evidence of a local infrastructure problem'
     },
@@ -45,17 +40,15 @@ const FeaturesGrid = () => {
       id: '5',
       icon: 'Bell',
       title: 'Smart Notifications',
-      description:
-        'Receive instant updates when authorities acknowledge, investigate, or resolve your complaint. Stay informed every step.',
-      image: "/images/screenshots/smart-notifications.jpg", // Recommended name for consistency
+      description: 'Receive instant updates when authorities acknowledge, investigate, or resolve your complaint. Stay informed every step.',
+      image: "/images/screenshots/smart-notifications.jpg", 
       alt: 'Mobile alert system for real-time resolution updates'
     },
     {
       id: '6',
       icon: 'Users',
       title: 'Community Impact',
-      description:
-        'See how your reports contribute to community improvement. Track collective progress and inspire others to take action.',
+      description: 'See how your reports contribute to community improvement. Track collective progress and inspire others to take action.',
       image: "/images/screenshots/community-impact.jpg",
       alt: 'Visualization of positive collective change in the local neighborhood'
     }
@@ -91,10 +84,11 @@ const FeaturesGrid = () => {
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
               className="w-full min-w-0 bg-card rounded-lg overflow-hidden border border-border hover:shadow-xl transition-shadow duration-250"
             >
-              <div className="aspect-[3/4] overflow-hidden">
-                <Image
-                  src={feature.image || ""}
+              <div className="aspect-[3/4] overflow-hidden bg-gray-100">
+                <img
+                  src={feature.image}
                   alt={feature.alt || "Feature Image"}
+                  loading="lazy"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>

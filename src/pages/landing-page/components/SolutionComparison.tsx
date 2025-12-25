@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import Icon from '../../../components/AppIcon';
-import Image from '../../../components/AppImage';
+import Icon from '@/components/AppIcon';
 
 const SolutionComparison = () => {
   const traditionalSteps = [
@@ -60,10 +59,11 @@ const SolutionComparison = () => {
               </h3>
             </div>
 
-            <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 shadow-md">
-              <Image
+            <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 shadow-md bg-gray-200">
+              <img
                 src="/images/screenshots/traditional-approach.jpg"
                 alt="Traditional bureaucratic process illustration"
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
@@ -106,10 +106,11 @@ const SolutionComparison = () => {
               </h3>
             </div>
 
-            <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 shadow-md">
-              <Image
+            <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 shadow-md bg-gray-200">
+              <img
                 src="/images/screenshots/resolveit-system.png"
                 alt="ResolveIt mobile app interface and digital workflow"
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
