@@ -11,7 +11,7 @@ const FeaturesGrid = () => {
       title: 'Secure Reporting',
       description:
         'End-to-end encryption ensures your complaints and personal data remain protected. VirusTotal verified with no permission abuse.',
-      image: "screenshots/images/public/secure-reporting.png", // Recommended name for consistency
+      image: "/images/screenshots/secure-reporting.jpg", // Recommended name for consistency
       alt: 'Digital security and data protection visualization'
     },
     {
@@ -20,7 +20,7 @@ const FeaturesGrid = () => {
       title: 'Real-Time Tracking',
       description:
         'Track your complaint journey from submission to resolution with live updates and status notifications at every stage.',
-      image: "screenshots/images/public/status-checking.png",
+      image: "/images/screenshots/status-checking.png",
       alt: 'Interface showing live status tracking of reported community issues'
     },
     {
@@ -29,7 +29,7 @@ const FeaturesGrid = () => {
       title: 'Direct Authority Communication',
       description:
         'Connect directly with government officials responsible for your area. No middlemen, no delays, just direct action.',
-      image: "screenshots/images/public/authorities.jpg",
+      image: "/images/screenshots/authorities.jpg",
       alt: 'Professional communication portal with government authorities'
     },
     {
@@ -38,7 +38,7 @@ const FeaturesGrid = () => {
       title: 'Photo Evidence',
       description:
         'Capture and submit visual proof of community issues with automatic location tagging for accurate problem identification.',
-      image: "screenshots/images/public/community-issue.jpg",
+      image: "/images/screenshots/community-issue.jpg",
       alt: 'Smartphone capturing visual evidence of a local infrastructure problem'
     },
     {
@@ -47,7 +47,7 @@ const FeaturesGrid = () => {
       title: 'Smart Notifications',
       description:
         'Receive instant updates when authorities acknowledge, investigate, or resolve your complaint. Stay informed every step.',
-      image: "screenshots/images/public/smart-notifications.png", // Recommended name for consistency
+      image: "/images/screenshots/smart-notifications.jpg", // Recommended name for consistency
       alt: 'Mobile alert system for real-time resolution updates'
     },
     {
@@ -56,7 +56,7 @@ const FeaturesGrid = () => {
       title: 'Community Impact',
       description:
         'See how your reports contribute to community improvement. Track collective progress and inspire others to take action.',
-      image: "screenshots/images/public/community-impact.jpg",
+      image: "/images/screenshots/community-impact.jpg",
       alt: 'Visualization of positive collective change in the local neighborhood'
     }
   ];

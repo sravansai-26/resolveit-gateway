@@ -62,7 +62,7 @@ const SolutionComparison = () => {
 
             <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 shadow-md">
               <Image
-                src="screenshots/images/public/traditional-approach.jpg"
+                src="/images/screenshots/traditional-approach.jpg"
                 alt="Traditional bureaucratic process illustration"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
@@ -108,7 +108,7 @@ const SolutionComparison = () => {
 
             <div className="aspect-[4/3] overflow-hidden rounded-lg mb-6 shadow-md">
               <Image
-                src="screenshots/images/public/resolveit-system.png"
+                src="/images/screenshots/resolveit-system.png"
                 alt="ResolveIt mobile app interface and digital workflow"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
