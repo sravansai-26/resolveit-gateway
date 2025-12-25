@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -6,23 +6,27 @@ interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   className?: string;
 }
 
+const FALLBACK_SRC = "/images/no_image.png";
+
 function Image({
   src,
-  alt = "Image Name",
+  alt = "Image",
   className = "",
   ...props
 }: ImageProps) {
-  const handleError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-    const target = e.target as HTMLImageElement;
-    target.src = "/assets/images/no_image.png";
-  };
+  const [imgSrc, setImgSrc] = useState(src);
 
   return (
     <img
-      src={src}
+      src={imgSrc}
       alt={alt}
       className={className}
-      onError={handleError}
+      loading="lazy"
+      onError={() => {
+        if (imgSrc !== FALLBACK_SRC) {
+          setImgSrc(FALLBACK_SRC);
+        }
+      }}
       {...props}
     />
   );
