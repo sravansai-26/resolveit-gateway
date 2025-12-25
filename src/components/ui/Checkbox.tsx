@@ -1,6 +1,5 @@
 import { forwardRef, type InputHTMLAttributes } from "react";
 import type { ReactNode } from "react";
-
 import { Check, Minus } from "lucide-react";
 
 type CheckboxSize = "sm" | "default" | "lg";

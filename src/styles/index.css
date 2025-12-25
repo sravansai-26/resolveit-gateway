@@ -1,13 +1,5 @@
-/* Only keep what Tailwind doesn't handle by default */
-:root {
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  font-family: 'Source Sans 3', sans-serif;
 }
