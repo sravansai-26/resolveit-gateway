@@ -14,7 +14,7 @@ function Image({
 }: ImageProps) {
   const handleError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     const target = e.target as HTMLImageElement;
-    target.src = "/assets/images/no_image.png";
+    target.src = "/images/no_image.png";
   };
 
   return (
