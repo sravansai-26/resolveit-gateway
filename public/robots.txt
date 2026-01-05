@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 
-# Focus Google on the main site first
-Sitemap: https://resolveit-community.vercel.app/sitemap.xml
+# Block non-public or internal paths if any
+Disallow: /api/
+Disallow: /admin/
+
+# Gateway site sitemap ONLY
 Sitemap: https://resolveit-gateway.vercel.app/sitemap.xml
