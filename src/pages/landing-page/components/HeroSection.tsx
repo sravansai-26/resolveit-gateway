@@ -22,7 +22,7 @@ const HeroSection = ({ onDownloadClick, onDemoClick }: HeroSectionProps) => {
 
   const handleDemoClick = () => {
     // Priority: Open the main website directly as requested
-    window.open('https://resolveit-community.vercel.app/', '_blank', 'noopener,noreferrer');
+    window.open('https://www.resolveit-community.me/', '_blank', 'noopener,noreferrer');
     
     // Optional: Still call the prop if passed for analytics or secondary behavior
     if (onDemoClick) onDemoClick();
